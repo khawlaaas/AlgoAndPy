@@ -113,7 +113,7 @@ def rapports(texte):
     print(f"Diversité du vocabulaire : {diversite:.2f}%")
 
 
-with open("data.txt", "r", encoding="utf-8") as fichier:
+with open("data.txt", "r") as fichier:
     texte = fichier.read()
 analyse_grammaticale(texte)
 analyse_lexique(texte)
